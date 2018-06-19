@@ -174,7 +174,13 @@ methodCollection.logHello();
 
 //Code Here
 
-
+function makePerson(nameParm,birthdayParm, ssnParm){
+  return {
+    name: nameParm,
+    birthday: birthdayParm,
+    ssn: ssnParm
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -184,5 +190,12 @@ methodCollection.logHello();
 */
 
 //Code Here
-
+function makeCard (cardNumberP, expirationDateP, securityCodeP){
+  return {
+    cardNumber: cardNumberP,
+    expirationDate: expirationDateP,
+    securityCode: securityCodeP
+  }
+}
+var nCard = Object.create(makeCard);
 
